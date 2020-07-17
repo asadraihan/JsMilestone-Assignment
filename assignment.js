@@ -16,6 +16,17 @@ function woodCalculator(chair, table, bed){
 
 //brickCalculator
 
+function brickCalculator(brick){
+    if (floore<=10){
+        var brick = floore*15*1000;
+    }
+    
+    return brick;
+    
+}
+var result = brickCalculator(35);
+console.log(result);
+
 
 
 
@@ -31,5 +42,3 @@ function tinyFriend(name){
     }
     return smallName;
 }
-
-
