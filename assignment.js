@@ -16,18 +16,22 @@ function woodCalculator(chair, table, bed){
 
 //brickCalculator
 
-function brickCalculator(brick){
+function brickCalculator(floore){
     if (floore<=10){
-        var brick = floore*15*1000;
+        var fristpart = floore*15*1000;
+        var brick = fristpart;
     }
-    
+    else if (floore<=20){
+        var secondPart = floore*12*1000;
+        var brick = fristpart + secondPart;
+    }
+    else if (floore > 20){
+        var thirdPart = floore*10*1000;
+        var brick = thirdPart + secondPart + fristpart;
+    }
     return brick;
     
 }
-var result = brickCalculator(35);
-console.log(result);
-
-
 
 
 //tinyFriend
